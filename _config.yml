@@ -1,0 +1,77 @@
+# Site settings
+title: Decision Lab @ UCSF (Chiong lab)
+name: Decision Lab at UCSF (Chiong lab)
+email: decisionlab@ucsf.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Neuroethics + Decision Neuroscience. Research group headed by Winston Chiong, MD PhD in the 
+  University of California, San Francisco Weill Institute for Neurosciences, Memory and Aging Center.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://decisionlab.ucsf.edu
+last_updated: # leave blank if you don't want to display last updated
+#twitter_username: jekyllrb
+#github_username:  jekyll
+
+# -----------------------------------------------------------------------------
+# News
+# -----------------------------------------------------------------------------
+blog_name: Decision Lab @ UCSF
+blog_description: neuroethics + decision neuroscience
+
+# Pagination
+paginate: 6
+permalink: /news/:year/:title/
+paginate_path: "news/page:num"
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+
+
+# Optional features
+show_social_icons:  false
+enable_anchorjs:    false
+enable_katex:       true
+
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /updates/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+  pastsem:
+    output: true
+    permalink: /pastsem/:path/
+
+news_limit: 7
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Includes & excludes
+include: ['_pages']
+exclude: [vendor]
+
+# Plug-ins
+plugins:
+    - jekyll-email-protect
+    - jekyll-paginate
+    - jemoji
+    - jekyll-sitemap
+
+
+# -----------------------------------------------------------------------------
+# Other settings
+# -----------------------------------------------------------------------------
+jquery_version: "1.12.4"
+katex_version: "0.9.0"
+anchorjs_version: "3.2.2"
