@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>MIND Lab at UTA</title>
+  <meta name="description" content="AI + Neuroscience. Research group headed by Dajiang Zhu, PhD in the University of Georgia Computer Science Department.
+">
+  
+  <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
+  
+
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="canonical" href="https://decisionlab.ucsf.edu/"> -->
+
+  <!-- Include custom icon fonts -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <style>
+    .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 50px;
+            height: 50px;
+            background-color: #0073e6;
+            color: #ffffff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: #005bb5;
+        }
+  </style>
+
+  <script type="text/javascript">
+      var MTUserId='d39f1f2d-a667-473b-8199-17b38df79f9b';
+      var MTFontIds = new Array();
+  
+      MTFontIds.push("5664082"); // Neue Helvetica® W01 45 Light 
+      MTFontIds.push("5664086"); // Neue Helvetica® W01 46 Light Italic 
+      MTFontIds.push("5664110"); // Neue Helvetica® W01 76 Bold Italic 
+      MTFontIds.push("5664149"); // Neue Helvetica® W01 75 Bold 
+      (function() {
+          var mtTracking = document.createElement('script');
+          mtTracking.type='text/javascript';
+          mtTracking.async='true';
+          mtTracking.src='assets/fonts/mtiFontTrackingCode.js';
+  
+          (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
+      })();
+  </script>
+
+
+  
+</head>
+
+
+  <body>
+    <button id="backToTop" class="back-to-top">↑</button>
+  <script>
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'flex';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+    <header class="site-header">
+		
+      <div class="top-banner logo light-blue">
+        <div class="inner">
+            <div>
+                <a class="logotype" href="https://www.uta.edu/" target="_blank" rel="noopener noreferrer">
+                    <span>University of Texas at Arlington</span>
+                </a>
+            </div>
+            <div class="nav">
+                <ul class="top-banner-menu">
+                    <li><a href="https://www.uta.edu/about" target="_blank" rel="noopener noreferrer">About UTA</a></li>
+                    <li><a href="https://www.uta.edu/search?q=" target="_blank" rel="noopener noreferrer">Search UTA</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <div class="wrapper">
+
+    
+    <a class="site-title" href="https://decisionlab.ucsf.edu/"><img style="display: inline-block; vertical-align: middle; padding-right: 2px; margin-bottom: 8px" src="https://decisionlab.ucsf.edu/assets/img/rbrain4-45.png" alt="Decision Lab logo, a rainbow-colored brain">MIND Lab</a>
+    
+    
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="index.html"><i class="fas fa-home" title="about"></i></a>
+
+        <!-- News -->
+        <!-- <a class="page-link" href="news.html">news</a> -->
+
+        <!-- Pages -->
+        
+          
+          <a class="page-link" href="teams.html">Team</a>
+          
+        
+          
+          <a class="page-link" href="papers.html">Papers</a>
+          
+        
+          
+          <a class="page-link" href="researches.html">Researches</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <script>
+        /* fontfaceobserver Copyright (c) 2014 - Bram Stein https://github.com/bramstein/fontfaceobserver/*/
+        (function(){'use strict';function f(a){this.a=k;this.b=void 0;this.d=[];var b=this;try{a(function(a){l(b,a)},function(a){m(b,a)})}catch(c){m(b,c)}}var k=2;function n(a){return new f(function(b,c){c(a)})}function p(a){return new f(function(b){b(a)})}
+      function l(a,b){if(a.a===k){if(b===a)throw new TypeError("Promise resolved with itself.");var c=!1;try{var d=b&&b.then;if(null!==b&&"object"===typeof b&&"function"===typeof d){d.call(b,function(b){c||l(a,b);c=!0},function(b){c||m(a,b);c=!0});return}}catch(e){c||m(a,e);return}a.a=0;a.b=b;q(a)}}function m(a,b){if(a.a===k){if(b===a)throw new TypeError("Promise rejected with itself.");a.a=1;a.b=b;q(a)}}
+      function q(a){setTimeout(function(){if(a.a!==k)for(;a.d.length;){var b=a.d.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0===a.a?"function"===typeof c?e(c.call(void 0,a.b)):e(a.b):1===a.a&&("function"===typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(g){b(g)}}},0)}f.prototype.e=function(a){return this.c(void 0,a)};f.prototype.c=function(a,b){var c=this;return new f(function(d,e){c.d.push([a,b,d,e]);q(c)})};
+      function r(a){return new f(function(b,c){function d(c){return function(d){g[c]=d;e+=1;e===a.length&&b(g)}}var e=0,g=[];0===a.length&&b(g);for(var h=0;h<a.length;h+=1)a[h].c(d(h),c)})}function s(a){return new f(function(b,c){for(var d=0;d<a.length;d+=1)a[d].c(b,c)})};window.Promise||(window.Promise=f,window.Promise.resolve=p,window.Promise.reject=n,window.Promise.race=s,window.Promise.all=r,window.Promise.prototype.then=f.prototype.c,window.Promise.prototype["catch"]=f.prototype.e);}());
+      (function(){'use strict';function e(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.f=document.createElement("span");this.e=document.createElement("span");this.d=-1;this.b.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";this.c.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";
+      this.e.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";this.f.style.cssText="display:inline-block;width:200%;height:200%;";this.b.appendChild(this.f);this.c.appendChild(this.e);this.a.appendChild(this.b);this.a.appendChild(this.c)}function r(a,b,c){a.a.style.cssText="min-width:20px;min-height:20px;display:inline-block;visibility:hidden;position:absolute;width:auto;margin:0;padding:0;top:0;white-space:nowrap;font-size:100px;font-family:"+b+";"+c}
+      function s(a){var b=a.a.offsetWidth,c=b+100;a.e.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.d!==b?(a.d=b,!0):!1}function t(a,b){a.b.addEventListener("scroll",function(){s(a)&&null!==a.a.parentNode&&b(a.d)},!1);a.c.addEventListener("scroll",function(){s(a)&&null!==a.a.parentNode&&b(a.d)},!1);s(a)};function u(a,b){this.family=a;this.style=b.style||"normal";this.variant=b.variant||"normal";this.weight=b.weight||"normal";this.stretch=b.stretch||"stretch";this.featureSettings=b.featureSettings||"normal"}var v=null;
+      u.prototype.a=function(a){a=a||"BESbswy";var b="font-style:"+this.style+";font-variant:"+this.variant+";font-weight:"+this.weight+";font-stretch:"+this.stretch+";font-feature-settings:"+this.featureSettings+";-moz-font-feature-settings:"+this.featureSettings+";-webkit-font-feature-settings:"+this.featureSettings+";",c=document.createElement("div"),k=new e(a),l=new e(a),m=new e(a),f=-1,d=-1,g=-1,n=-1,p=-1,q=-1,h=this;r(k,"sans-serif",b);r(l,"serif",b);r(m,"monospace",b);c.appendChild(k.a);c.appendChild(l.a);
+      c.appendChild(m.a);document.body.appendChild(c);n=k.a.offsetWidth;p=l.a.offsetWidth;q=m.a.offsetWidth;return new Promise(function(a,y){function w(){null!==c.parentNode&&document.body.removeChild(c)}function x(){if(-1!==f&&-1!==d&&-1!==g&&f===d&&d===g){if(null===v){var b=/AppleWeb[kK]it\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);v=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))}v?f===n&&d===n&&g===n||f===p&&d===p&&g===p||f===q&&d===q&&g===q||(w(),a(h)):(w(),
+      a(h))}}setTimeout(function(){w();y(h)},3E3);t(k,function(a){f=a;x()});r(k,h.family+",sans-serif",b);t(l,function(a){d=a;x()});r(l,h.family+",serif",b);t(m,function(a){g=a;x()});r(m,h.family+",monospace",b)})};window.FontFaceObserver=u;window.FontFaceObserver.prototype.check=u.prototype.a;}());
+        /*
+        Fonts are loaded through @font-face rules in the CSS whenever an element references them.
+        FontFaceObserver creates a referencing element to trigger the font request, and lsisten for font load events.
+        When all 3 fonts are loaded, we enable them by adding a class to the html element
+      */
+      (function( w ){
+        // if the class is already set, we're good.
+        if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+          return;
+        }
+        var fontA = new w.FontFaceObserver( "decisionlab", {
+          weight: 300
+        });
+        var fontB = new w.FontFaceObserver( "decisionlab", {
+          weight: 600
+        });
+        var fontC = new w.FontFaceObserver( "decisionlab", {
+          weight: 300,
+          style: "italic"
+        });
+        var fontD = new w.FontFaceObserver( "decisionlab", {
+          weight: 600,
+          style: "italic"
+        });
+
+        w.Promise
+          .all([fontA.check(), fontB.check(), fontC.check(), fontD.check])
+          .then(function(){
+            w.document.documentElement.className += " fonts-loaded";
+          });
+      }( this ));
+        </script>
+    
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  
+  <header class="post-header">
+    <h1 class="post-title">Researches</h1>
+    <h5 class="post-description"></h5>
+  </header>
+      
+  <style>
+    .text-justify {
+      text-align: justify; /* 文本对齐两端 */
+      hyphens: auto; /* 自动断字 */
+      line-height: 1.6; /* 增加行高以提高可读性 */
+      /* word-spacing: 1px; 增加单词之间的间距以美化布局 */
+      overflow-wrap: break-word; /* 如果单词过长，允许在任意点换行 */
+      word-break: break-word; /* 如果单词无法在常规位置断行，强制断行 */
+    }
+  </style>
+
+  <article class="post-content projects clearfix">
+    <h2>Brain Imaging</h2>
+    <h4><a href="https://www.sciencedirect.com/science/article/pii/S1361841524002536?casa_token=PyunmY4ukk8AAAAA:3ljJmw3chie2GBAD2iq56kV_IsrocRM-XaqdBSHaZVQOhEny114H2kk-sBwpinfdqoTscxjO" target="_blank">Lifespan Brain Anatomical Correspondence via Cortical Developmental Continuity Transfer</a>, Medical Image Analysis, 2024</h4>
+    <div id="Lifespan" class="project-container" style="margin-top: 0px">
+      <img src="assets/img/lifespan.png" alt="Lifespan" style="width: 100%;" />
+    </div>
+    <p class="text-justify">Due to the variability in cortical folding, neurodevelopmental stages, and limited neuroimaging data, inferring reliable lifespan anatomical correspondences is challenging. To address this, we leverage cortical developmental continuity and propose a transfer learning strategy: training the model on the largest age group and adapting it to other groups along the cortical trajectory. Evaluated on 1,000+ brains across four age groups (34 gestational weeks to young adults), results show that this strategy significantly improves performance in populations with limited samples and robustly infers complex anatomical correspondences across stages. </p>
+
+    <h4><a href="https://academic.oup.com/cercor/article/33/10/5851/6880883?login=false" target="_blank">Cortex2vector: anatomical embedding of cortical folding patterns</a>, Cerebral Cortex, 2022</h4>
+    <div id="Cortex2vector" class="project-container" style="margin-top: 0px">
+      <img src="assets/img/cortex2vector.png" alt="cortex2vector" style="width: 100%;" />
+    </div>
+    <p class="text-justify">In this work, we put further effort, based on the identified 3HGs, to establish the correspondences of individual 3HGs. We developed a learning-based embedding framework to encode individual cortical folding patterns into a group of anatomically meaningful embedding vectors (cortex2vector). Each 3HG can be represented as a combination of these embedding vectors via a set of individual specific combining coefficients. In this way, the regularity of folding pattern is encoded into the embedding vectors, while the individual variations are preserved by the multi-hop combination coefficients.
+    </p>
+
+    <h4><a href="https://www.sciencedirect.com/science/article/pii/S1361841522001104?casa_token=fPzR05pu_9AAAAAA:Oe6JP8ElZudqz3yqBE51fqbLa0IH8f5lyMm6bbOrqWJowXUI6DzrNUF_2MnpzlWD5dBlDy-TKyxZ" target="_blank">Predicting brain structural network using functional connectivity</a>, Medical Image Analysis, 2022</h4>
+    <div id="sctofc" class="project-container" style="margin-top: 0px">
+      <img src="assets/img/Predicting brain structural network using functional connectivity.png" alt="sctofc" style="width: 100%;" />
+    </div>
+    <p class="text-justify">Motivated by the advances of generative adversarial network (GAN) and graph convolutional network (GCN) in the deep learning field, in this work, we proposed a multi-GCN based GAN (MGCN-GAN) to infer individual SC based on corresponding FC by automatically learning the complex associations between individual brain structural and functional networks. The generator of MGCN-GAN is composed of multiple multi-layer GCNs which are designed to model complex indirect connections in brain network. The discriminator of MGCN-GAN is a single multi-layer GCN which aims to distinguish the predicted SC from real SC. To overcome the inherent unstable behavior of GAN, we designed a new structure-preserving (SP) loss function to guide the generator to learn the intrinsic SC patterns more effectively. Using Human Connectome Project (HCP) dataset and Alzheimer’s Disease Neuroimaging Initiative (ADNI) dataset as test beds, our MGCN-GAN model can generate reliable individual SC from FC. 
+    </p>
+    <hr />
+
+<h2>Brain Disease</h2>
+
+<h4><a href="https://www.sciencedirect.com/science/article/pii/S1043661823003948" target="_blank">Disease2Vec: Representing Alzheimer’s Progression via Disease Embedding Tree</a>, Pharmacological Research, 2023</h4>
+<div id="Disease2Vec" class="project-container" style="margin-top: 0px">
+  <img src="assets/img/disease2vec.png" alt="Disease2Vec" style="width: 100%;" />
+</div>
+<p>Predictive models for Alzheimer’s Disease (AD) and mild cognitive impairment (MCI) have largely focused on binary or multi-class classification, overlooking AD’s continuous progression. While recent models explore biomarker sequences, predicting individual patient status across AD’s continuous stages remains understudied. We introduce Disease2Vec, a novel embedding framework that encodes clinical stages into meaningful vectors, creating a disease embedding tree (DETree) that reflects AD progression. DETree enables accurate prediction across five clinical groups and provides richer insights by mapping patients onto a continuous trajectory of AD progression. </p>
+
+<h4><a href="https://www.sciencedirect.com/science/article/pii/S1361841521001286" target="_blank">Deep Fusion of Brain Structure-Function in Mild Cognitive Impairment</a>, Medical image analysis, 2021</h4>
+<div id="deepfusion" class="project-container" style="margin-top: 0px">
+  <img src="assets/img/Deep Fusion of Brain Structure-Function in Mild Cognitive Impairment.png" alt="deepfusion" style="width: 100%;" />
+</div>
+<p>In this work, we developed a graph-based deep neural network to simultaneously model brain structure and function in Mild Cognitive Impairment (MCI): the topology of the graph is initialized using structural network (from diffusion MRI) and iteratively updated by incorporating functional information (from functional MRI) to maximize the capability of differentiating MCI patients from elderly normal controls. This resulted in a new connectome by exploring “deep relations” between brain structure and function in MCI patients and we named it as Deep Brain Connectome. Though deep brain connectome is learned individually, it shows consistent patterns of alteration comparing to structural network at group level. </p>
+
+<h4><a href="https://link.springer.com/chapter/10.1007/978-3-031-43904-9_65" target="_blank">Multimodal Deep Fusion in Hyperbolic Space for Mild Cognitive Impairment Study</a>, MICCAI, 2023</h4>
+<div id="Hyperbolic" class="project-container" style="margin-top: 0px">
+  <img src="assets/img/Hyperbolic.png" alt="Hyperbolic" style="width: 100%;" />
+</div>
+<p>Recent studies have suggested that non-Euclidean hyperbolic space may provide a more accurate interpretation of brain connectomes than Euclidean space. In light of these findings, we propose a novel graph-based hyperbolic deep model with a learnable topology to integrate the individual structural network with functional information in hyperbolic space for the MCI/NC (normal control) classification task. </p>
+<hr />
+
+<h2>Brain_inspired AI</h2>
+
+<h4><a href="https://ieeexplore.ieee.org/abstract/document/10636811" target="_blank">BI-AVAN: A Brain-Inspired Adversarial Visual Attention Network for Characterizing Human Visual Attention from Neural Activity</a>, IEEE Transactions on Multimedia, 2024</h4>
+<div id="BI-AVAN" class="project-container" style="margin-top: 0px">
+  <img src="assets/img/BI-AVAN.png" alt="BI-AVAN" style="width: 100%;" />
+</div>
+<p>Most visual attention studies rely on eye-tracking rather than directly measuring brain activity, and they overlook the adversarial relationship between attention-related objects and background. To address this, we propose a brain-inspired adversarial visual attention network (BI-AVAN) that models human visual attention from brain activity. Our model mimics the biased competition between attended and neglected objects to identify visual focus in movie frames, validated by independent eye-tracking data. Experimental results demonstrate that BI-AVAN effectively infers human visual attention and maps brain activity to visual stimuli. </p>
+
+<h4><a href="https://ieeexplore.ieee.org/abstract/document/10721320/authors#authors" target="_blank">Core-Periphery Multi-Modality Feature Alignment for Zero-Shot Medical Image Analysis</a>, IEEE Transactions on Medical Imaging, 2024</h4>
+<div id="CP" class="project-container" style="margin-top: 0px">
+  <img src="assets/img/CP.png" alt="CP" style="width: 100%;" />
+</div>
+<p>Simply applying language-image pre-trained CLIP to medical image analysis encounters substantial domain shifts, resulting in severe performance degradation due to inherent disparities between natural (non-medical) and medical image characteristics. To address this challenge and uphold or even enhance CLIP’s zero-shot capability in medical image analysis, we develop a novel approach, Core-Periphery feature alignment for CLIP (CP-CLIP), to model medical images and corresponding clinical text jointly. To achieve this, we design an auxiliary neural network whose structure is organized by the core-periphery (CP) principle. This auxiliary CP network not only aligns medical image and text features into a unified latent space more efficiently but also ensures alignment driven by principles of brain network organization. In this way, our approach effectively mitigates and further enhances CLIP’s zero-shot performance in medical image analysis. </p>
+<hr />
+
+<h2>LLM/AGI for Healthcare</h2>
+
+<h4><a href="https://arxiv.org/abs/2303.11032" target="_blank">DeID-GPT: Zero-shot Medical Text De-Identification by GPT-4</a>, 2023</h4>
+<div id="DeID-GPT" class="project-container" style="margin-top: 0px">
+  <img src="assets/img/DeID-GPT Zero-shot Medical Text De-Identification by GPT-4.png" alt="DeID-GPT" style="width: 100%;" />
+</div>
+<p>The advancement of large language models (LLM), such as ChatGPT and GPT-4, have shown great potential in processing text data in the medical domain with zero-shot in-context learning, especially in the task of privacy protection, as these models can identify confidential information by their powerful named entity recognition (NER) capability. In this work, we developed a novel GPT4-enabled de-identification framework (“DeID-GPT”) to automatically identify and remove the identifying information. Compared to existing commonly used medical text data de-identification methods, our developed DeID-GPT showed the highest accuracy and remarkable reliability in masking private information from the unstructured medical text while preserving the original structure and meaning of the text.
+</p>
+
+<h4><a href="https://arxiv.org/abs/2409.09825" target="_blank">GP-GPT: Large Language Model for Gene-Phenotype Mapping</a>, 2024</h4>
+<div id="GP-GPT" class="project-container" style="margin-top: 0px">
+  <img src="assets/img/GP-GPT.png" alt="GP-GPT" style="width: 100%;" />
+</div>
+<p>The complex traits and heterogeneity of multi-sources genomics data poses significant challenges when adapting these models to the bioinformatics and biomedical field. To address these challenges, we present GPGPT, the first specialized large language model for genetic-phenotype knowledge representation and genomics relation analysis. Our model is fine-tuned in two stages on a comprehensive corpus composed of over 3,000,000 terms in genomics, proteomics, and medical genetics, derived from multiple large-scale validated datasets and scientific publications. GP-GPT demonstrates proficiency in accurately retrieving medical genetics information and performing common genomics analysis tasks, such as genomics information retrieval and relationship determination.
+</p>
+
+</article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+   
+  </body>
+
+</html>
